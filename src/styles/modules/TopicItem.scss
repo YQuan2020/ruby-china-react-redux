@@ -1,0 +1,98 @@
+@import 'share.scss';
+
+.box {
+  padding: 10px 15px;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  min-height: 51px;
+}
+
+.box:hover {
+}
+
+.avatar-box {
+  display: table-cell;
+  padding-right: 10px;
+}
+
+.avatar {
+  height: 48px;
+  width: 48px;
+  border-radius: 120px;
+}
+
+.infos {
+  @include box;
+  padding: 0;
+  display: table-cell;
+  vertical-align: top;
+  width: 100000px;
+  overflow: hidden;
+  border: 0;
+}
+
+.title {
+  line-height: 30px;
+  height: 30px;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.node-name {
+  margin-right: 8px;
+  color: #777;
+}
+
+.title-link {
+  color: #222;
+  text-decoration: none;
+}
+
+.info{
+  color: #ABA8A6;
+  font-size: 12px;
+  margin-top: 0;
+  letter-spacing: .03em;
+  line-height: 1.4em;
+}
+
+.info-reply {
+  border-bottom: 1px dotted #777;
+  cursor: help;
+}
+
+.replies-count {
+  @include box;
+  text-align: right;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border: 0;
+}
+
+.count-num {
+  display: inline-block;
+  line-height: 11px;
+  color: #fff;
+  min-width: 32px;
+  text-align: center;
+  border-radius: 80px;
+  padding: 3px 8px 3px 8px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #CFD3E6
+}
+
+.count-num:hover {
+  background-color: #A9BBDC;
+}
+
+.node {
+  @include container;
+  @include box;
+}
+
+.name {
+  @include container;
+  @include box;
+}

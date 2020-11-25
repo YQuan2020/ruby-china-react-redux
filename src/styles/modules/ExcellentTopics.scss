@@ -1,0 +1,37 @@
+@import 'share.scss';
+
+.box {
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.panel {
+  @include panel;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #777;
+}
+
+.banner {
+  @include panel;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  
+  a {
+    text-decoration: none;
+    color: #222527;
+  }
+}
+
+.col {
+  display: table-cell;
+  width: 50%;
+  font-size: 15px;
+}
+
+@media (max-width: 991px) {
+  .col {
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,56 @@
+@import './share.scss';
+
+@mixin col {
+  display: table-cell;
+}
+
+.box {
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.panel-head {
+  @include panel;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+.node-catagories {
+  margin-bottom: 10px;
+}
+
+.left-col {
+  @include col;
+  border: 0;
+  min-width: 130px;
+  padding-right: 10px;
+  text-align: right;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.right-col {
+  @include col;
+  border: 0;
+}
+
+.node-item {
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  text-align: left;
+  color: #333;
+}
+
+.node-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
